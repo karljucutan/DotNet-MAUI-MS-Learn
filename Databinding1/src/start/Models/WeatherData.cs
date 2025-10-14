@@ -1,6 +1,6 @@
 ﻿namespace WeatherClient.Models;
 
-public readonly record struct WeatherData(int Temperature,
+public record struct WeatherData(int Temperature,
                                           int Precipitation,
                                           int Humidity,
                                           int Wind,

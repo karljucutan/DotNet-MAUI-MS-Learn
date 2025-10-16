@@ -17,6 +17,7 @@ public partial class MoviesListPage : ContentPage
         await Navigation.PushAsync(new Views.MovieDetailPage());
     }
 
+    //  No longer usew. Change from Clicked EventHandler to Command implementaiton
     private void MenuItem_Clicked(object sender, EventArgs e)
     {
         MenuItem menuItem = (MenuItem)sender;

@@ -12,7 +12,13 @@
             <DataTemplate>
                 <TextCell Text="{Binding Title}" x:DataType="vm:MovieViewModel">
                     <TextCell.ContextActions>
-                        <MenuItem Text="Delete" IsDestructive="True" Clicked="MenuItem_Clicked" />
+                        <!--<MenuItem Text="Delete" IsDestructive="True" Clicked="MenuItem_Clicked" />--> 
+                        <!--From Clicked EventHandler to Command-->
+                        <MenuItem 
+                            Text="Delete" 
+                            IsDestructive="True" 
+                            Command="{Binding DeleteMovieCommand, Source={x:Static local:App.MainViewModel}}"
+                            CommandParameter="{Binding}"/>
                     </TextCell.ContextActions>
                 </TextCell>
             </DataTemplate>

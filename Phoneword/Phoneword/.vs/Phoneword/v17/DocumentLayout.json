@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\GitHub Repositories\\DotNet-MAUI-MS-Learn\\Phoneword\\Phoneword\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27FAB407-122D-4F38-BC89-4466452D8B6B}|Phoneword.csproj|d:\\github repositories\\dotnet-maui-ms-learn\\phoneword\\phoneword\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{27FAB407-122D-4F38-BC89-4466452D8B6B}|Phoneword.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{27FAB407-122D-4F38-BC89-4466452D8B6B}|Phoneword.csproj|d:\\github repositories\\dotnet-maui-ms-learn\\phoneword\\phoneword\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27FAB407-122D-4F38-BC89-4466452D8B6B}|Phoneword.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,21 +45,12 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AndroidManifest.xml",
-              "DocumentMoniker": "D:\\GitHub Repositories\\DotNet-MAUI-MS-Learn\\Phoneword\\Phoneword\\Platforms\\Android\\AndroidManifest.xml",
-              "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
-              "ToolTip": "D:\\GitHub Repositories\\DotNet-MAUI-MS-Learn\\Phoneword\\Phoneword\\Platforms\\Android\\AndroidManifest.xml",
-              "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-10-13T07:46:01.012Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "D:\\GitHub Repositories\\DotNet-MAUI-MS-Learn\\Phoneword\\Phoneword\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
@@ -76,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PhonewordTranslator.cs",
               "DocumentMoniker": "D:\\GitHub Repositories\\DotNet-MAUI-MS-Learn\\Phoneword\\Phoneword\\PhonewordTranslator.cs",
               "RelativeDocumentMoniker": "PhonewordTranslator.cs",
@@ -84,8 +71,7 @@
               "RelativeToolTip": "PhonewordTranslator.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T07:27:07.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T07:27:07.205Z"
             }
           ]
         }

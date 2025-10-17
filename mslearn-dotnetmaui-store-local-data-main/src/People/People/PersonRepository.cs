@@ -1,10 +1,12 @@
 ﻿using People.Models;
+using SQLite;
 
 namespace People;
 
 public class PersonRepository
 {
-    string _dbPath;
+    private string _dbPath;
+    private SQLiteConnection _conn;
 
     public string StatusMessage { get; set; }
 
@@ -12,7 +14,11 @@ public class PersonRepository
 
     private void Init()
     {
-        // TODO: Add code to initialize the repository         
+        if (_conn != null)
+            return;
+
+        _conn = new SQLiteConnection(_dbPath);
+        _conn.CreateTable<Person>();
     }
 
     public PersonRepository(string dbPath)
@@ -25,14 +31,13 @@ public class PersonRepository
         int result = 0;
         try
         {
-            // TODO: Call Init()
+            Init();
 
             // basic validation to ensure a name was entered
             if (string.IsNullOrEmpty(name))
                 throw new Exception("Valid name required");
 
-            // TODO: Insert the new person into the database
-            result = 0;
+            result = _conn.Insert(new Person { Name = name });
 
             StatusMessage = string.Format("{0} record(s) added (Name: {1})", result, name);
         }
@@ -45,10 +50,10 @@ public class PersonRepository
 
     public List<Person> GetAllPeople()
     {
-        // TODO: Init then retrieve a list of Person objects from the database into a list
         try
         {
-            
+            Init();
+            return _conn.Table<Person>().ToList();
         }
         catch (Exception ex)
         {
